@@ -14,33 +14,48 @@
         android:textSize="30dp"
         />
     <TextView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Podaj e-mail:"
         />
+
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="email"
-        android:id="@+id/email"/>
+        android:hint="email"
+        android:textColorHint="@android:color/transparent"
+        android:inputType="text"
+        android:minHeight="48dp" />
     <TextView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Podaj hasło:" />
+
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Haslo"
+        android:textColorHint="@android:color/transparent"
         android:inputType="textPassword"
-        android:id="@+id/password"/>
+        android:minHeight="48dp" />
     <TextView
+        
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Powtórz hasło:"/>
+
     <EditText
+        android:id="@+id/password2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Haslo2"
+        android:textColorHint="@android:color/transparent"
         android:inputType="textPassword"
-        android:id="@+id/password2"/>
+        android:minHeight="48dp" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,5 +66,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Autor: Alan Koesling"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:id="@+id/editmsg"/>
 </LinearLayout>
